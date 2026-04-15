@@ -1,0 +1,56 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NexusAgent — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs & Runtime
+logs/
+*.log
+*.pid
+
+# Model Weights & Data (too large for git)
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+benchmark/*.jsonl
+
+# Local Config Overrides
+configs/local_*.yaml

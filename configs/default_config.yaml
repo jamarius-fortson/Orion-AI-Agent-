@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# OrionAgent — Default Runtime Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+
+agent:
+  name: "OrionAgent"
+  bio: "A helpful AI assistant capable of searching, reasoning, and acting."
+  max_iterations: 10
+  language: "en"            # Supported: en | zh
+
+llm:
+  provider: "openai"        # Options: openai | local
+  model_name: "gpt-4"
+  temperature: 0.0
+  max_tokens: 4096
+  # For local model deployment:
+  local_host: "localhost"
+  local_port: 8888
+
+tools:
+  enabled:
+    - web_search
+    - weather
+    - browse_website
+    - get_date_time
+  weather_api_key: ""       # Set via env: WEATHER_API_KEY
+
+logging:
+  level: "INFO"             # DEBUG | INFO | WARNING | ERROR
+  output: "console"         # console | file
+  log_file: "logs/orionagent.log"
+
+proxy:
+  http_proxy: ""            # Optional: set if DuckDuckGo is blocked
