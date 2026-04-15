@@ -1,7 +1,4 @@
 <div align="center">
-
-<img src="blob/logo.png" width="350" alt="Orion Agent Logo"/>
-
 # Orion Agent
 ### *The Next-Generation Multi-LLM Agentic Intelligence Framework*
 
